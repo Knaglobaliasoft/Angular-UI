@@ -1,0 +1,56 @@
+<div class="assessments_main">
+    <div class="d-flex justify-content-between">
+        <div class="title">
+            <h3 class="m-0 fw-bolder">Custom Assessments</h3>
+            <p class="m-0 font-normal">User created Assessments library</p>
+        </div>
+        <div>
+            <button class="Assessment_btn border-0">
+                <i class="fa-solid fa-plus"></i> New Assessment
+            </button>
+        </div>
+    </div>
+    <div class="search_input">
+        <input type="search" class="search_theme" placeholder="Type to search...">
+        <i class="fa-solid fa-magnifying-glass search"></i>
+    </div>
+    <div class="overflow-auto">
+        <table class="table Assessments_table overflow-x-auto">
+            <thead>
+                <tr>
+                    <th scope="col">STATUS <i class="fa-solid fa-angle-down"></i></th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Tests / Questions</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of Datatable">
+                    <td class="active"><i class="fa-solid fa-circle circle"></i>
+                        <p class="m-0">{{item.Satus}}</p>
+                    </td>
+                    <td class="table_title">{{item.Title}}</td>
+                    <td class="d-flex test_Questions">
+                        <p class="m-0">{{item.Test}}</p>
+
+                    </td>
+                    <td class="open-btn">
+                        <button *ngIf="item.id === 2">Open</button>
+                    </td>
+                    <td class="position-relative">
+                        <button type="button" class="menu_btn" (click)="$event.stopPropagation(); myDrop.open();"><i
+                                class="fa-solid fa-ellipsis-vertical menu"></i></button>
+                        <div class="dropdown-main" ngbDropdown #myDrop="ngbDropdown">
+                            <div ngbDropdownMenu aria-labelledby="">
+                                <button class="droupdown_btn" ngbDropdownItem><i
+                                        class="fa-solid fa-pencil icone"></i>Edit</button>
+                                <button class="droupdown_btn" ngbDropdownItem><i
+                                        class="fa-solid fa-trash icone"></i>Delete</button>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

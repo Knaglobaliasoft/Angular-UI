@@ -1,0 +1,253 @@
+.assessments_main {
+    background-color: #F5F7F9;
+    padding: 36px 40px;
+    height: 100%;
+    padding-bottom: 20px;
+}
+
+.title h3 {
+    color: #4A5F82;
+    font-size: 20px;
+}
+
+.title p {
+    color: #4A5F82 !important;
+    font-size: 12px;
+}
+
+.Assessment_btn {
+    width: 172px;
+    height: 40px;
+    background-color: #009999;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.search_input {
+    position: relative;
+    margin-top: 28px;
+}
+
+.search_theme {
+    width: 300px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #DFE4EC !important;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+    text-indent: 28px;
+}
+
+.search_theme::placeholder {
+    color: #7D92B5;
+}
+
+.search {
+    color: #7D92B5;
+    font-size: 14px;
+    position: absolute;
+    top: 13px;
+    left: 10px;
+}
+
+.Assessments_table {
+    margin-top: 40px;
+    border: #F5F7F9;
+}
+
+.Assessments_table thead tr th {
+    color: #5D75A2;
+    font-size: 11px;
+    padding: 0;
+    font-weight: 500;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0 8px;
+}
+
+.Assessments_table tbody {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.Assessments_table tbody tr {
+    vertical-align: baseline;
+}
+
+.Assessments_table tbody tr:hover {
+    background: #fff;
+}
+
+.Assessments_table tbody tr:hover .table_title {
+    color: #384761;
+}
+
+.Assessments_table tbody tr:hover .test_Questions {
+    color: #384761;
+}
+
+.Assessments_table tbody tr:hover .test_number {
+    color: #384761;
+}
+
+.Assessments_table tbody tr th {
+    margin: 8px 0px;
+}
+
+.Assessments_table tbody tr th {
+    padding: 26px 36px;
+    border-collapse: collapse;
+    border-spacing: 20px 0px;
+}
+
+.Assessments_table tbody tr td {
+    padding: 26px 0px;
+}
+
+.test_Questions {
+    gap: 40px;
+}
+
+.test_Questions p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #5D75A2 !important;
+}
+
+.active {
+    gap: 6px;
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+    font-weight: 500;
+    color: #7D92B5;
+}
+
+.circle {
+    font-size: 16px;
+    color: #00CD3D;
+}
+
+.table_title {
+    color: #4A5F82;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.test_number {
+    font-size: 14px;
+    padding-right: 4px;
+    color: #4A5F82;
+    font-weight: 500;
+}
+
+.open_theme {
+    width: 68px;
+    height: 40px;
+    background-color: #009999;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.menu {
+    padding: 14px;
+    color: #5D75A2;
+}
+
+.menu:hover {
+    background: rgba(0, 102, 102, 0.1);
+}
+
+.menu_btn {
+    background-color: #fff;
+    border: none;
+}
+
+.dropdown-main {
+    position: absolute;
+    top: 73px;
+    left: -132px;
+}
+
+.open-btn button {
+    margin-left: auto;
+    display: flex;
+    width: 68px;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    height: 40px;
+    background: #009999;
+    border-radius: 4px;
+    font-weight: 500;
+    outline: 0;
+    border: 0;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.Assessments_table tbody .active {
+    padding-left: 26px !important;
+}
+
+.droupdown_btn {
+    color: #7D92B5;
+    gap: 8px;
+}
+
+.dropdown-menu.show {
+    border: 1px solid #DFE4EC;
+    box-shadow: 8px 8px 16px rgba(74, 95, 130, 0.1);
+    border-radius: 4px;
+}
+
+.icone {
+    padding-right: 8px;
+}
+.droupdown_btn:focus{
+    background-color: #009999;
+    color: #fff;
+}
+@media (max-width:767px) {
+    .Assessments_table {
+        width: 700px;
+        overflow-y: auto;
+    }
+
+    .assessments_main {
+        padding: 20px;
+    }
+}
+
+@media (max-width:575px) {
+    .title h3 {
+        font-size: 16px;
+    }
+
+    .Assessment_btn {
+        height: 30px;
+        width: 140px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width:425px) {
+    .assessments_main div:nth-child(1) {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search_input {
+        margin-top: 15px;
+    }
+
+    .search_input input {
+        width: 100%;
+    }
+}
